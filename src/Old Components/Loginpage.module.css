@@ -1,0 +1,107 @@
+body {
+    background: #f3f3f0;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* Typography */
+
+
+.container {
+    width:60%;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 2em ;
+    margin: 2em;
+    text-align: center;
+}
+
+h5 {
+    margin-top: -.8em;
+    font-weight:normal;
+}
+
+
+/* form */
+
+.account {
+    display: flex;
+    flex-direction: column;
+    /* align-items:center ; */
+    /* padding: 1em 1em 0 1em; */
+}
+
+
+label {
+    font-size: 20px;
+    font-weight: normal;
+    /* color: rgba(0,0,0,0.5); */
+    margin-bottom: .5em;
+    text-align: start;
+}
+
+
+input[type = 'text'], input[type = 'password'] {
+    width: 80%;
+    margin-bottom: 1.5em;
+    padding: .5em;
+    border-radius: 5px;   
+}
+
+input[type='radio'] {
+    padding: 20px; 
+    border-radius: 20px;
+    margin-bottom: .5em;
+    margin-right: none;
+    width: 8%;
+    height: 2em;
+} 
+
+
+span {
+    font-size:.8em;
+    font-weight:none;
+    margin-left: .5em;
+}
+
+.email,
+.password,
+.confirm {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Buttons */
+
+.btn {
+    background-color: black;
+    color: white;
+    border-radius:5px;
+    padding:.5em;
+    font-size: .75rem;
+}
+
+.accountBtn {
+    width: 160px;
+    font-size:15px;
+    border-radius: 5px;
+    padding:.2em;
+    background-color: black;
+    color:#fff;
+    
+}
+
+.googleBtn {
+    width: 25%;   
+}
+
+.facebookBtn {
+    width: 25%;
+    margin-left: .3em;
+}
+
+

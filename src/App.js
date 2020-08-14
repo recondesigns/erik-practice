@@ -13,11 +13,24 @@ const AppContainer = styled.div`
   border: 1px solid lightcoral;
 `
 
+const FormContainer = styled.div`
+  margin: 120px 0px 0px 0px;
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid dodgerblue;
+`
+
 export default function App() {
   return (
     <AppContainer>
       <Header title={'Sign In'} subtitle={'or create and account to continue with O.P. Veteran.'} />
-      <Input />
+      <FormContainer>
+        <Input label={'Email'} placeholder={'Enter an email'} />
+        <Input label={'Password'} placeholder={'Enter a password'} />
+      </FormContainer>
     </AppContainer>
   )
 }

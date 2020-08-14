@@ -7,11 +7,12 @@ import { Button } from './components/Button'
 
 
 const AppContainer = styled.div`
-  width: 100%;
-  height: 100vh;
-  padding: 40px 40px 40px 40px;
+  width: 648px;
+  height: 864px;
+  padding: 40px 16px 40px 16px;
   box-sizing: border-box;
-  border: 1px solid lightcoral;
+  background: white;
+  /* border: 1px solid lightcoral; */
 `
 
 const FormContainer = styled.div`
@@ -21,12 +22,12 @@ const FormContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid dodgerblue;
+  /* border: 1px solid dodgerblue; */
 `
 
 const ButtonContainer = styled.div`
   margin: 80px 0px 0px 0px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 `
 
 const FormBody2 = styled.p`

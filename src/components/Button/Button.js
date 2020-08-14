@@ -8,7 +8,7 @@ const ButtonContainer = styled.div`
     height: 40px;
     padding: 0px 0px 0px 0px;
     box-sizing: border-box;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 `
 
 const StyledButton = styled.button`

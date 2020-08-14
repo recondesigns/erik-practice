@@ -6,7 +6,7 @@ import * as colors from '../../assets/colors'
 const HeaderContainer = styled.div`
     height: 72px;
     box-sizing: border-box;
-    border: 1px solid ${colors.green.base};
+    /* border: 1px solid ${colors.green.base}; */
 `
 
 const HeaderH2 = styled.div`

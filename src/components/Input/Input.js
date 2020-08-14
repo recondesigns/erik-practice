@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import * as colors from '../../assets/colors'
+
 const InputContainer = styled.div`
-    margin: 0px 0px 0px 0px;
+    margin: 24px 0px 0px 0px;
     width: 255px;
     min-height: 64px;
-    /* box-sizing: border-box; */
-    border: 1px solid lightcoral;
 `
 
 const InputLabel = styled.label`
@@ -20,6 +20,7 @@ const InputLabel = styled.label`
     align-items: center;
     letter-spacing: 0.02em;
     box-sizing: border-box;
+    color: ${colors.black}
     /* border: 1px dotted gray; */
 `
 
@@ -27,8 +28,8 @@ const StyledInput = styled.input`
     margin: 8px 0px 0px 0px;
     width: 255px;
     height: 32px;
-    background: #F4F4F4;
-    border: 1px solid #EAEAEA;
+    background: ${colors.gray.lighter};
+    border: 1px solid ${colors.gray.light};
     box-sizing: border-box;
     font-family: Open Sans;
     font-style: normal;
@@ -38,7 +39,7 @@ const StyledInput = styled.input`
     display: flex;
     align-items: center;
     letter-spacing: 0.01em;
-    color: #545454;
+    color: ${colors.gray.darker};
     /* background: gray; */
 `
 

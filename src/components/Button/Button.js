@@ -27,7 +27,6 @@ const StyledButton = styled.button`
 `
 
 export default function Button(props) {
-    console.log(props)
     const { text, clickFunc } = props
     return (
         <ButtonContainer>

@@ -1,37 +1,40 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import * as colors from '../../assets/colors'
-
-const ButtonContainer = styled.div`
-    width: 169px;
-    height: 40px;
-    padding: 0px 0px 0px 0px;
-    box-sizing: border-box;
-    /* border: 1px solid green; */
-`
+import { findButtonStyle } from './utils'
 
 const StyledButton = styled.button`
-    width: 100%;
-    height: 100%;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 40px;
+    padding: 4px 16px 4px 16px;
+    min-width: 216px;
+    height: 40px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    letter-spacing: 1px;
-    color: ${colors.black};
+    justify-content: center;
+
+    /* 
+        Helvetica font in the Figma is an owned font that needs
+        to be paid for. Using Source Sans Pro in the interim.
+     */
+     
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: ${props => props.color};
+    background: ${props => props.background};
+    border: ${props => props.border};
+    border-radius: 2px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.2);
 `
 
 export default function Button(props) {
-    console.log(props)
-    const { text, clickFunc } = props
+    const { buttonText, buttonStyle } = props
+    const { background, color, border } = findButtonStyle(buttonStyle)
+
     return (
-        <ButtonContainer>
-            <StyledButton onClick={clickFunc}>{text}</StyledButton>
-        </ButtonContainer>
+       <StyledButton background={background} color={color} border={border}>{buttonText}</StyledButton>
     )
 }
